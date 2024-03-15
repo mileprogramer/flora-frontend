@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="css/shop.css">
+</head>
+<body>
+    <!-- Header Desktop -->
+    <header class="desktop-header">
+        <div class="container">
+            <div class="pre-header">
+                <h1 class="pre-header-logo"><a href="index.html">Flora</a></h1>
+                <div class="pre-header-search">
+                    <input class="pre-header-search-input" type="search" placeholder="Search for our products, category...">
+                    <div id="search-result"></div>
+                </div>
+
+                <div class="pre-header-icons">
+                    <div class="pre-header-icons-icon-box">
+                        <img src="img/index/support.svg" alt="">
+                        <p>24/7 Help<br> +212 34535556</p>
+                    </div>
+                    <div class="pre-header-icons-icon-box">
+                        <img src="img/index/account.svg" alt="">
+                        <p>My<br> account</p>
+                    </div>
+                    <div id="openCart" class="pre-header-icons-icon-box">
+                        <img src="img/index/cart.svg" alt="">
+                        <span class="cart-added">1</span>
+                        <p>My<br> cart</p>
+                    </div>
+                </div>
+            </div>
+            <div class="main-header">
+                <ul class="main-header-ul">
+                    <li class="main-header-ul-li"><a href="index.html">Home</a></li>
+                    <li class="main-header-ul-li"><a class="active" href="shop.html">Shop</a></li>
+                    <li class="main-header-ul-li"><a href="#">Flowers</a></li>
+                    <li class="main-header-ul-li"><a href="#">Plants</a></li>
+                    <li class="main-header-ul-li"><a href="#">Vases</a></li>
+                    <li class="main-header-ul-li"><a href="#">Pottery</a></li>
+                    <li class="main-header-ul-li"><a href="#">Candles</a></li>
+                    <li class="main-header-ul-li"><a href="#">Contact</a></li>
+                    <li class="main-header-ul-li"><a href="#">Blog</a></li>
+                    <li class="main-header-ul-li"><a href="#">About us</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- Mobile header -->
+    <div class="mobile-header">
+        <div class="container">
+            <div class="mobile-header-icons">
+                <div class="mobile-header-icons-icon-box">
+                    <img src="img/index/support.svg" alt="">
+                    <p>24/7  help<br> +212 34535556</p>
+                </div>
+                <div class="mobile-header-icons-icon-box">
+                    <img src="img/index/account.svg" alt="">
+                    <p>My<br> account</p>
+                </div>
+                <div class="mobile-header-icons-icon-box">
+                    <img src="img/index/cart.svg" alt="">
+                    <span class="cart-added">1</span>
+                    <p>My<br> cart</p>
+                </div>
+            </div>
+            <div class="mobile-header-main">
+                <h1 class="mobile-header-main-logo"><a href="index.html">Flora</a></h1>
+                <div class="mobile-header-main-parent">
+                    <div class="mobile-header-main-parent-menu">
+                        <p>Menu</p>
+                        <div class="mobile-header-main-parent-menu-lines">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-header-nav-menu">
+                <ul>
+                    <li class=""><a href="#">Home</a></li>
+                    <li class=""><a href="#">Shop</a></li>
+                    <li class=""><a href="#">Flowers</a></li>
+                    <li class=""><a href="#">Plants</a></li>
+                    <li class=""><a href="#">Vases</a></li>
+                    <li class=""><a href="#">Pottery</a></li>
+                    <li class=""><a href="#">Candles</a></li>
+                    <li class=""><a href="#">Contact</a></li>
+                    <li class=""><a href="#">Blog</a></li>
+                    <li class=""><a href="#">About us</a></li>
+                    <li class="close"><img src="img/index/close-circle-svgrepo-com.svg" alt=""></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal cart popup -->
+    <div id="overlay"></div>
+    <div class="modal-cart">
+        <p class="modal-cart-desc">You have successfully added the product to the cart. If you need any help with your purchase, you can watch our <a href="#">tutorial</a> on how to buy.</p>
+
+        <div class="addedToCart">
+        </div>
+        <div class="modal-cart-total">
+            <p>Total prize is <span></span></p>
+        </div>
+        <div class="modal-cart-btns">
+            <button id="continueShopModal" class="btn-dark">Continue shooping</button>
+            <button class="btn-white"><a href="cart.html">Proceed to checkout</a></button>
+        </div>
+        <div class="modal-cart-close" id="modalCloseBtn">
+            <img src="img/index/close-circle-svgrepo-com.svg" alt="">
+        </div>
+    </div>
+
+    <!-- Shop -->
+
+    <section class="shop">
+        <div class="container">
+            <aside class="shop-filters">
+                <div class="shop-filters-price-range">
+                    <h3>Filter price range</h3>
+                    <div class="shop-filters-price-range">
+                        <div class="shop-filters-price-range-slider">
+                            <input id="min" type="range" min="0" max="16" value="0">
+                            <input id="max" type="range" min="16" max="32" value="100">
+                        </div>
+
+                        <div class="shop-filters-price-range-inputs">
+                            <div class="shop-filters-price-range-inputs-input-min">
+                                <label for="min">Min:</label>
+                                <input type="number" id="min">
+                            </div>
+                            <div class="shop-filters-price-range-inputs-input-max">
+                                <label for="Max">Max:</label>
+                                <input type="number" id="max">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-filters-category">
+                    <h3>Filter category</h3>
+                    <div class="shop-filters-category-parent">
+                    </div>
+                </div>
+            </aside>
+            <div class="shop-products">
+                
+            </div>
+        </div>
+        <div class="shop-pagination" id="pagination">
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <section class="footer">
+        <div class="footer-wave">
+            <img src="img/footer/wave.svg" alt="">
+        </div>
+        <div class="container">
+            <div class="main-footer">
+                <div>
+                    <h2 class="main-footer-logo">Flora</h2>
+                    <p>1004 4th Avenue NY</p>
+                    <p>+212 34535556</p>
+                    <p>info@flora.com</p>
+                </div>
+                <div class="main-footer-info">
+                    <p>Working hours</p>
+                    <p>Monday-Sunday</p>
+                    <p>11AM:8PM</p>
+                </div>
+                <div class="main-footer-info">
+                    <p>Quick links</p>
+                    <p>Shop</p>
+                    <p>Blog</p>
+                    <p>Contact</p>
+                </div>
+                <div class="main-footer-newsletter">
+                    <p>Subscribe to our newsletter</p>
+                    <div class="main-footer-newsletter-form">
+                        <input type="text" placeholder="Enter your email adress">
+                        <button class="main-footer-newsletter-form-btn-form">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="after-footer">
+                <p>Website was made by <a href="https://nemanja-milic.rs/">Mile</a></p>
+                <div class="after-footer-social mx-auto">
+                    <p>Follow us on</p>
+                    <div>
+                        <p><a href="">Instagram</a></p>
+                        <p><a href="">Facebook</a></p>
+                        <p><a href="">Tiktok</a></p>
+                    </div>
+
+                </div>
+                <p>Icons are from <a href="https://www.flaticon.com/">flaticon</a></p>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="js/responsive.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/singleProduct.js"></script>
+    <script src="js/shop.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/sort.js"></script>
+    <script src="js/shopPage.js"></script>
+</body>
+</html>

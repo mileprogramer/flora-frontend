@@ -1,0 +1,45 @@
+/* Variables */
+@font-face {
+  font-family: "Courgette";
+  font-weight: 400;
+  src: url(../fonts/Courgette/courgette-regular-webfont.woff2);
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 300;
+  src: url(../fonts/Montserrat/Montserrat-Regular.woff2) format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  font-weight: bold;
+  src: url(../fonts/Montserrat/Montserrat-Bold.woff2) format("woff2");
+  font-display: swap;
+}
+.modal-making {
+  display: none;
+  background-color: #CED0BB;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 20px;
+}
+.modal-making-noti {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #232323;
+  padding: 15px;
+}
+.modal-making-noti img {
+  width: 30px;
+  height: auto;
+  cursor: pointer;
+}
+.modal-making-noti p {
+  font-size: 20px;
+}
+.modal-making p {
+  padding: 20px;
+}/*# sourceMappingURL=modalMaking.css.map */

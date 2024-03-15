@@ -1,0 +1,53 @@
+@import "../global/variables.scss";
+.product{
+    border: 1px solid $gray;
+    border-radius: 7px;
+    padding: 15px 0px;
+    text-align: center;
+    .parent{
+        display: block;
+        width: 100%;
+    }
+    .parent:hover img{
+        transform: scale(1.2);
+    }
+    .img-holder{
+        width: 290px;
+        margin: 0 auto;
+        border-radius: 7px;
+        overflow: hidden;
+    }
+    img{
+        transition: 0.4s ease-in-out;
+        width: 100%;
+        height: auto;
+        border-radius: 7px;
+    }
+    .name{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .prize{
+        margin: 10px 0px;
+    }
+    .add_to_cart{
+        padding: 10px 0px;
+        margin: 0px 10px;
+    }
+}
+/* Responsive */
+@media (max-width: 768px) {
+    .product{
+        img{
+            width: 220px;
+        }
+    }
+}
+@media (max-width: 576px) {
+    .product{
+        img{
+            padding: 10px 15px;
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+@import "global/classes.scss";
+@import "global/variables.scss";
+@import "global/fonts.scss";
+@import "components/buttons.scss";
+@import "components/containers.scss";
+@import "components/header.scss";
+@import "components/footer.scss";
+@import "components/modalCart.scss";
+
+.box{
+    margin: 40px 0px;
+    & .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+    &-img-holder{
+        width: 400px;
+        height: auto;
+        img{
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+        }
+    }
+    &-info{
+        padding: 10px 20px;
+        p{
+            margin: 10px 0px;
+        }
+        .btn-white{
+            text-align: center;
+            width: 280px;
+        }
+    }
+}

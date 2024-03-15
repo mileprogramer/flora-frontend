@@ -1,0 +1,36 @@
+@import "../global/variables.scss";
+@import "../global/fonts.scss";
+.btn{
+    display: block;
+    padding: 15px 35px;
+    background-color: $green;
+    text-decoration: none;
+    color: $black;
+    transition: 0.4s ease-in-out;
+    font-size: 18px;
+    border-radius: 50px;
+    font-family: "Montserrat", "sanf-serif";
+}
+.btn-white{
+    @extend .btn;
+    background-color: $white;
+    color: $black;
+    border: 1px solid $black;
+}
+.btn-dark{
+    @extend .btn;
+    background-color: $black;
+    color: $white;
+    border: 1px solid $black;
+}
+.btn:hover{
+    color: $white;
+}
+.btn-white:hover{
+    background-color: $black;
+    color: $white;
+}
+.btn-dark:hover{
+    background-color: $white;
+    color: $black;
+}

@@ -1,0 +1,29 @@
+@import "../global/variables.scss";
+@import "../global/fonts.scss";
+
+.modal-making{
+    display: none;
+    background-color: $gray;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 20px;
+    &-noti{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid $black;
+        padding: 15px;
+        img{
+            width: 30px;
+            height: auto;
+            cursor: pointer;
+        }
+        p{
+            font-size: 20px;
+        }
+    }
+    p{
+        padding: 20px;
+    }
+}

@@ -1,0 +1,44 @@
+/* FAQ */
+/* Variables */
+.faq-table-accordian {
+  border-bottom: 2px solid #232323;
+  background-color: #E6E8D6;
+}
+.faq-table-accordian:first-child {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  overflow-x: hidden;
+}
+.faq-table-accordian:last-child {
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: none;
+  overflow-x: hidden;
+}
+.faq-table-accordian:hover {
+  cursor: pointer;
+}
+.faq-table-accordian-body {
+  padding: 10px;
+  width: 100%;
+}
+.faq-table-accordian-body-sign {
+  display: inline-block;
+  padding-left: 10px;
+  font-size: 44px;
+  transition: 0.4s ease-in-out;
+}
+.faq-table-accordian-body-question {
+  display: inline-block;
+  font-size: 26px;
+  padding-left: 10px;
+}
+.faq-table-accordian-body-answer {
+  background-color: #FAFBFC;
+  height: 0px;
+  overflow: hidden;
+  transition: 0.4s ease-in-out;
+}
+.faq-table-accordian-body-answer p {
+  padding: 30px;
+}/*# sourceMappingURL=faq.css.map */

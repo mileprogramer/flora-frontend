@@ -1,0 +1,132 @@
+/* Variables */
+@font-face {
+  font-family: "Courgette";
+  font-weight: 400;
+  src: url(../fonts/Courgette/courgette-regular-webfont.woff2);
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 300;
+  src: url(../fonts/Montserrat/Montserrat-Regular.woff2) format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  font-weight: bold;
+  src: url(../fonts/Montserrat/Montserrat-Bold.woff2) format("woff2");
+  font-display: swap;
+}
+.active {
+  display: block !important;
+}
+
+#overlay {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-cart {
+  display: none;
+  position: relative;
+  border-radius: 20px;
+  padding: 30px 40px;
+  background-color: #CED0BB;
+  position: fixed;
+  z-index: 9999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.modal-cart-desc {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.modal-cart .addedToCart {
+  max-width: 580px;
+  margin: 20px auto;
+}
+.modal-cart .addedToCart-parent {
+  margin-top: 20px;
+  border: 1px dashed #232323;
+  padding: 10px;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+.modal-cart .addedToCart img {
+  margin-left: 10px;
+  width: 50px;
+  height: auto;
+  border-radius: 7px;
+}
+.modal-cart .addedToCart .quantity {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+.modal-cart .addedToCart .quantity-plus {
+  background-color: #17a2b8;
+  color: white;
+}
+.modal-cart .addedToCart .quantity-minus {
+  background-color: rgba(106, 106, 106, 0.5882352941);
+  color: white;
+}
+.modal-cart .addedToCart button {
+  font-size: 23px;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  border: none;
+}
+.modal-cart .addedToCart .remove {
+  background-color: #dc3545;
+  color: white;
+  margin: 0 10px 0 auto;
+}
+.modal-cart-total {
+  max-width: 580px;
+  margin: 20px auto;
+  border: 1px dashed #232323;
+  padding: 10px 45px;
+  border-radius: 20px;
+}
+.modal-cart-btns {
+  display: flex;
+  justify-content: space-around;
+}
+.modal-cart-btns button {
+  padding: 10px 15px;
+}
+.modal-cart-close {
+  position: fixed;
+  top: 2%;
+  left: 94%;
+  width: 35px;
+  height: auto;
+}
+.modal-cart-close img {
+  width: 100% !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .modal-cart-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .modal-cart-close {
+    display: none;
+  }
+}/*# sourceMappingURL=modalCart.css.map */

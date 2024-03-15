@@ -1,0 +1,146 @@
+@import "../global/variables.scss";
+@import "../global/fonts.scss";
+.footer{
+    margin-top: 30px;
+    padding-top: 200px;
+    background-color: $gray;
+    position: relative;
+    &-wave{
+        position: absolute;
+        top: 0%;
+        left: 0;
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        line-height: 0;
+        img{
+            width: 100%;
+        }
+    }
+    .main-footer{
+        padding: 30px 0px;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        &-info{
+            p{
+                padding-left: 10px;
+                margin: 5px 0px;
+            }
+            p:first-child{
+                padding: 0;
+                font-size: 20px;
+            }
+        }
+        &-newsletter{
+            p{
+                font-size: 20px;
+                margin-bottom: 25px;
+            }
+            &-form{
+                input{
+                    outline: none;
+                    height: 36px;
+                    border: none;
+                    padding-left: 10px;
+                    border-radius: 50px;
+                }
+                &-btn-form{
+                    border-radius: 50px;
+                    background-color: white;
+                    display: inline-block;
+                    padding: 10px 15px;
+                    border: 1px solid $black;
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+    .after-footer{
+        padding: 20px 0px;
+        border-top: 1px solid $black;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "made social flaticon";
+        p{
+            &:first-child{
+                grid-area: made;
+            }
+            &:last-child{
+                grid-area: flaticon;
+            }
+        }
+        &-social{
+            grid-area: social;
+            & div{
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+                margin-top: 10px;
+            }
+            p{
+                text-align: center;
+                display: inline-block;
+            }
+            p:first-child{
+                display: block;
+            }
+        }
+        p:last-child{
+            margin-left: auto;
+        }
+    }
+}
+
+
+@media (max-width:1319px) {
+    .footer .main-footer-newsletter-form{
+        button{
+            margin-left: 0px;
+            margin-top: 10px;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .footer .main-footer-newsletter-form button {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+@media (max-width: 768px) {
+    .footer{
+        padding-top: 150px;
+        .main-footer{
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+        .after-footer{
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: "made made flaticon flaticon"
+                                "social social social social";
+            row-gap: 20px;
+            p{
+                &:last-child{
+                    text-align: end;
+                }
+            }
+
+        }
+    }
+}
+@media (max-width: 576px) {
+    .footer{
+        padding-top: 50px;
+        .main-footer{
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4,1fr);
+            row-gap: 20px;
+            &-newsletter{
+                p{
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+}

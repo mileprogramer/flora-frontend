@@ -1,0 +1,56 @@
+/* Variables */
+@font-face {
+  font-family: "Courgette";
+  font-weight: 400;
+  src: url(../fonts/Courgette/courgette-regular-webfont.woff2);
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 300;
+  src: url(../fonts/Montserrat/Montserrat-Regular.woff2) format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  font-weight: bold;
+  src: url(../fonts/Montserrat/Montserrat-Bold.woff2) format("woff2");
+  font-display: swap;
+}
+.btn, .btn-dark, .btn-white {
+  display: block;
+  padding: 15px 35px;
+  background-color: #61CE70;
+  text-decoration: none;
+  color: #232323;
+  transition: 0.4s ease-in-out;
+  font-size: 18px;
+  border-radius: 50px;
+  font-family: "Montserrat", "sanf-serif";
+}
+
+.btn-white {
+  background-color: #FAFBFC;
+  color: #232323;
+  border: 1px solid #232323;
+}
+
+.btn-dark {
+  background-color: #232323;
+  color: #FAFBFC;
+  border: 1px solid #232323;
+}
+
+.btn:hover, .btn-white:hover, .btn-dark:hover {
+  color: #FAFBFC;
+}
+
+.btn-white:hover {
+  background-color: #232323;
+  color: #FAFBFC;
+}
+
+.btn-dark:hover {
+  background-color: #FAFBFC;
+  color: #232323;
+}/*# sourceMappingURL=buttons.css.map */
